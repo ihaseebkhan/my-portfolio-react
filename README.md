@@ -1,53 +1,140 @@
-# Welcome to your Lovable project
+# My Portfolio
 
-## Project info
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. Showcase your work, experience, and skills with an elegant and interactive design.
 
-**URL**: https://lovable.dev/projects/11a0b737-a4a2-45b0-bcd0-b0bcfa2c2a4f
+## Features
 
-## How can I edit this code?
+- **Hero Section** - Engaging introduction with a call-to-action
+- **Projects Showcase** - Display your best work with detailed project cards
+- **Experience Timeline** - Highlight your professional background and achievements
+- **Tech Stack** - Showcase the technologies and tools you work with
+- **Contact Form** - Get in touch section with email integration and reCAPTCHA protection
+- **Responsive Design** - Fully mobile-optimized for all devices
+- **Smooth Animations** - Polished transitions and interactive elements
+- **Dark/Light Mode Ready** - Built with Tailwind CSS for easy theme customization
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **Frontend Framework**: React + TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Form Handling**: React Hook Form
+- **Email Service**: EmailJS
+- **Validation**: Zod
+- **Charts**: Recharts
+- **Icons**: Lucide React
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/11a0b737-a4a2-45b0-bcd0-b0bcfa2c2a4f) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js & npm (or Bun)
+- Git
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
+1. Clone the repository:
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+git clone <repository-url>
+cd my-portfolio-react
 ```
 
-**Edit a file directly in GitHub**
+2. Install dependencies:
+```sh
+npm install
+# or with bun
+bun install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. Start the development server:
+```sh
+npm run dev
+# or with bun
+bun run dev
+```
 
-**Use GitHub Codespaces**
+The application will be available at `http://localhost:8080`
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
+## Building for Production
+
+To create an optimized production build:
+
+```sh
+npm run build
+```
+
+The built files will be in the `dist/` directory.
+
+To preview the production build locally:
+
+```sh
+npm run preview
+```
+
+## Customization
+
+### Update Personal Information
+
+Edit the component files in `src/components/` to add your:
+- Name and tagline (Hero.tsx)
+- Projects (Projects.tsx)
+- Professional experience (Experience.tsx)
+- Technical skills (TechStack.tsx)
+- Contact details (Contact.tsx)
+
+### Email Configuration
+
+Set up EmailJS integration in `src/services/emailService.ts` with your credentials to enable the contact form.
+
+### reCAPTCHA Setup
+
+Add your reCAPTCHA site key to the environment configuration for form protection.
+
+## Project Structure
+
+```
+src/
+├── components/       # React components
+│   ├── ui/          # shadcn/ui components
+│   └── ...          # Feature components
+├── pages/           # Page components
+├── services/        # External services (email, etc.)
+├── hooks/           # Custom React hooks
+├── utils/           # Utility functions
+└── lib/             # Library helpers
+```
+
+## Development
+
+### Running Linter
+
+```sh
+npm run lint
+```
+
+### Build in Development Mode
+
+```sh
+npm run build:dev
+```
+
+## Deployment
+
+This portfolio can be deployed to any static hosting platform:
+
+- **Vercel**: Push to GitHub and deploy directly
+- **Netlify**: Connect your repository for automatic deployments
+- **GitHub Pages**: Configure GitHub Actions for CI/CD
+- **AWS S3 + CloudFront**: Manual deployment option
+
+## License
+
+This project is open source and available under the MIT License.
+
+## Support
+
+For questions or issues, please open an issue on the repository.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
 ## What technologies are used for this project?
@@ -59,11 +146,3 @@ This project is built with .
 - React
 - shadcn-ui
 - Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/11a0b737-a4a2-45b0-bcd0-b0bcfa2c2a4f) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
