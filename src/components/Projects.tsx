@@ -11,6 +11,7 @@ type Project = {
   description: string;
   techStack: string[];
   image: string;
+  link: string;
 };
 
 const Projects = () => {
@@ -24,6 +25,7 @@ const Projects = () => {
     techStack: ["React", "TypeScript", "Tailwind CSS", "Shadcn UI", "Playwright"],
     image:
       clipwiseImage,
+    link: "https://clipwise.com"
   },
   {
     title: "ScreenClip",
@@ -32,6 +34,7 @@ const Projects = () => {
     techStack: ["React", "Redux","JavaScript", "Tailwind CSS", "Fabric.js", "Chrome Extensions"],
     image:
       screenclipImage,
+    link: "https://screenclip.com"
   },
   {
     title: "SafeShare",
@@ -40,6 +43,7 @@ const Projects = () => {
     techStack: ["JavaScript", "HTML", "CSS", "Bootstrap", "RESTful APIs"],
     image:
       safeshareImage,
+    link: "https://safeshare.tv"
   },
   {
     title: "Knowledge Platform CMS",
@@ -48,6 +52,7 @@ const Projects = () => {
     techStack: ["React", "Context API", "Redux", "JavaScript", "Tailwind CSS"],
     image:
       cmsImage,
+    link: "https://cms.knowledgeplatform.com"
   },
   {
     title: "Knowledge Platform LMS",
@@ -56,6 +61,7 @@ const Projects = () => {
     techStack: ["Svelte", "SvelteKit", "JavaScript", "HTML", "CSS", "Tailwind CSS"],
     image:
       lmsImage,
+    link: "https://lms.knowledgeplatform.com"
   },
 ];
 
@@ -109,7 +115,8 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="project-card glass-morphism rounded-xl overflow-hidden hover-lift transition-all duration-500"
+              className="project-card glass-morphism rounded-xl overflow-hidden hover-lift transition-all duration-500 cursor-pointer"
+              onClick={() => window.open(project.link, "_blank")}
             >
               <div className="aspect-video relative overflow-hidden">
                 <img

@@ -12,49 +12,49 @@ const Experience = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const experienceItems: ExperienceItem[] = [
-  {
-    title: "Frontend Developer",
-    company: "Vitzo Limited",
-    location: "Cheyenne, WY, USA",
-    period: "August 2023 - November 2025",
-    achievements: [
-      "Developed and enhanced user-facing features for web applications using React, Redux, JavaScript/TypeScript, Tailwind CSS, Bootstrap, shadcn/ui, and Fabric.js across products such as ScreenClip, SafeShare, and ClipWise.",
-      "Built a Chrome extension to capture, edit, and share screenshots, leveraging Fabric.js for canvas-based editing.",
-      "Implemented pixel-accurate UI/UX designs from Zeplin and Figma, delivering intuitive and consistent user experiences.",
-      "Improved application performance through code splitting, image optimization, extraction of shared logic into a common package, and effective use of memoization techniques.",
-      "Added multilingual support to React applications using i18next, expanding accessibility and reach to a broader user base.",
-      "Conducted code reviews on GitHub and the Beanstalk app, providing constructive feedback to improve code quality, consistency, and maintainability.",
-      "Created end-to-end test suites using Playwright to ensure application reliability across critical user flows.",
-    ],
-  },
-  {
-    title: "Full Stack Developer",
-    company: "Knowledge Platform (Private) Limited",
-    location: "Islamabad, Pakistan",
-    period: "August 2020 - August 2023",
-    achievements: [
-      "Developed a scalable, cross-platform custom Content Management System (CMS) using React, Redux, and Tailwind CSS, enabling clients to create and manage e-learning lessons, quizzes, and educational games for a large and growing user base.",
-      "Developed a Learning Management System (LMS) portal using Svelte and Bootstrap, enabling students and educators to access lessons, quizzes, and educational games, and track learning progress.",
-      "Ensured CMS and LMS reliability through comprehensive end-to-end and integration testing across core workflows.",
-      "Refactored existing code to improve readability and maintainability, resulting in a much faster development time.",
-      "Authored detailed technical documentation for APIs, components, and workflows, accelerating onboarding and reducing long-term technical debt.",
-    ],
-  },
-  {
-    title: "Backend Engineer",
-    company: "Anzen Private Limited",
-    location: "Islamabad, Pakistan",
-    period: "July 2019 - August 2020",
-    achievements: [
-      "Delivered backend features in a fast-paced startup, meeting tight deadlines and enabling rapid product iteration.",
-      "Developed a scalable pub/sub backend using Node.js and MQTT protocol to enable seamless communication between IoT devices.",
-      "Developed a React dashboard to visualize sensor data and system metrics for an IoT drip irrigation platform.",
-      "Implemented the ELK stack (Elasticsearch, Logstash, Kibana) to track and visualize client activity on IoT devices, improving sales forecasting and identifying optimization opportunities.",
-      "Configured and managed AWS cloud services to support IoT data processing and monitoring.",
-      "Improved database efficiency and maintainability through MySQL query optimization, stored procedures, and reliable backup/restore processes.",
-    ],
-  },
-];
+    {
+      title: "Frontend Developer",
+      company: "Vitzo Limited",
+      location: "Cheyenne, WY, USA",
+      period: "August 2023 - November 2025",
+      achievements: [
+        "Built and enhanced scalable, user-facing web application features using React and TypeScript across multiple products, ensuring maintainable architecture and consistent UI patterns",
+        "Developed a Chrome extension for capturing, editing, and sharing screenshots, leveraging Fabric.js for advanced canvas-based image manipulation",
+        "Translated pixel-perfect designs from Figma and Zeplin into responsive, high-quality interfaces, ensuring consistency across devices and browsers",
+        "Improved application performance through code splitting, image optimization, extraction of shared logic into a common package, and effective use of memoization techniques",
+        "Added multilingual support using i18next, enabling localization and expanding product accessibility to a broader user base",
+        "Conducted code reviews via GitHub and Beanstalk, improving code quality, maintainability, and team development standards",
+        "Created end-to-end test suites using Playwright to ensure application reliability across critical user flows",
+      ],
+    },
+    {
+      title: "Full Stack Developer",
+      company: "Knowledge Platform (Private) Limited",
+      location: "Islamabad, Pakistan",
+      period: "August 2020 - August 2023",
+      achievements: [
+        "Developed a scalable, cross-platform Content Management System (CMS) using React and JavaScript, enabling educators to create and manage interactive e-learning content including lessons, quizzes, and games across multiple institutions",
+        "Built a Learning Management System (LMS) portal using Svelte and JavaScript, enabling students and educators to access content, track progress, and engage with learning materials seamlessly",
+        "Architected and maintained unit and end-to-end testing frameworks, ensuring reliability across critical user workflows and reducing production issues",
+        "Refactored existing code to improve readability, modularity, and maintainability, accelerating feature development and reducing time-to-delivery",
+        "Authored technical documentation for APIs, components, and system workflows, accelerating onboarding and reducing long-term technical debt",
+      ],
+    },
+    {
+      title: "Backend Engineer",
+      company: "Anzen Private Limited",
+      location: "Islamabad, Pakistan",
+      period: "July 2019 - August 2020",
+      achievements: [
+        "Delivered backend features in a fast-paced startup, meeting tight deadlines and enabling rapid product iteration",
+        "Developed a scalable pub/sub backend using Node.js and MQTT protocol to enable seamless communication between IoT devices",
+        "Developed a React dashboard to visualize sensor data and system metrics for an IoT drip irrigation platform",
+        "Implemented the ELK stack (Elasticsearch, Logstash, Kibana) to track and visualize client activity on IoT devices, improving sales forecasting and identifying optimization opportunities",
+        "Configured and managed AWS cloud services to support IoT data processing and monitoring",
+        "Improved database efficiency and maintainability through MySQL query optimization, stored procedures, and reliable backup/restore processes",
+      ],
+    },
+  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
