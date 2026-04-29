@@ -153,7 +153,7 @@ const Contact = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
             <a
-              href="mailto:its.ihaseeb1995@gmail.com"
+              href="mailto:ihaseeb1995@gmail.com"
               className="glass-morphism rounded-xl p-6 text-center hover-lift"
               target="_blank"
               rel="noopener noreferrer"
