@@ -20,8 +20,9 @@ const Experience = () => {
       achievements: [
         "Built and enhanced scalable, user-facing web application features using React and TypeScript across multiple products, ensuring maintainable architecture and consistent UI patterns",
         "Developed a Chrome extension for capturing, editing, and sharing screenshots, leveraging Fabric.js for advanced canvas-based image manipulation",
-        "Translated pixel-perfect designs from Figma and Zeplin into responsive, high-quality interfaces, ensuring consistency across devices and browsers",
         "Improved application performance through code splitting, image optimization, extraction of shared logic into a common package, and effective use of memoization techniques",
+        "Leveraged AI-assisted development tools (Claude Code, GitHub Copilot) to accelerate feature delivery, debugging, refactoring, and automated test generation across React and TypeScript applications",
+        "Translated pixel-perfect designs from Figma and Zeplin into responsive, high-quality interfaces, ensuring consistency across devices and browsers",
         "Added multilingual support using i18next, enabling localization and expanding product accessibility to a broader user base",
         "Conducted code reviews via GitHub and Beanstalk, improving code quality, maintainability, and team development standards",
         "Created end-to-end test suites using Playwright to ensure application reliability across critical user flows",
@@ -36,6 +37,7 @@ const Experience = () => {
         "Developed a scalable, cross-platform Content Management System (CMS) using React and JavaScript, enabling educators to create and manage interactive e-learning content including lessons, quizzes, and games across multiple institutions",
         "Built a Learning Management System (LMS) portal using Svelte and JavaScript, enabling students and educators to access content, track progress, and engage with learning materials seamlessly",
         "Architected and maintained unit and end-to-end testing frameworks, ensuring reliability across critical user workflows and reducing production issues",
+        "Mentored and guided 2 junior developers through code reviews, pair programming, and best practices, improving code quality and accelerating their onboarding and feature delivery",
         "Refactored existing code to improve readability, modularity, and maintainability, accelerating feature development and reducing time-to-delivery",
         "Authored technical documentation for APIs, components, and system workflows, accelerating onboarding and reducing long-term technical debt",
       ],

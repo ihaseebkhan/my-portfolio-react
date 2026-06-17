@@ -108,6 +108,23 @@ const TechStack = () => {
     ],
   },
   {
+    name: "Developer Tools & AI",
+    technologies: [
+      {
+        name: "Claude Code",
+        icon: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/claude-code/default.svg",
+      },
+      {
+        name: "GitHub Copilot",
+        icon: "https://api.iconify.design/simple-icons:githubcopilot.svg?color=white",
+      },
+      {
+        name: "Cursor",
+        icon: "https://api.iconify.design/simple-icons:cursor.svg?color=white",
+      },
+    ],
+  },
+  {
     name: "Build & Tooling",
     technologies: [
       {
