@@ -17,6 +17,27 @@ const TechStack = () => {
 
   const techCategories: TechCategory[] = [
   {
+    name: "Languages",
+    technologies: [
+      {
+        name: "JavaScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      },
+      {
+        name: "TypeScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      },
+      {
+        name: "Python",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+      },
+      {
+        name: "SQL",
+        icon: "https://api.iconify.design/material-symbols:sql.svg?color=white",
+      },
+    ],
+  },
+  {
     name: "Frontend",
     technologies: [
       {
@@ -24,16 +45,16 @@ const TechStack = () => {
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
       },
       {
+        name: "Context API",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      },
+      {
+        name: "Redux",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+      },
+      {
         name: "Next.js",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-      },
-      {
-        name: "TypeScript",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-      },
-      {
-        name: "JavaScript",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
       },
       {
         name: "HTML5",
@@ -59,13 +80,67 @@ const TechStack = () => {
         name: "Svelte",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg",
       },
+    ],
+  },
+  {
+    name: "Backend / APIs",
+    technologies: [
       {
-        name: "Fabric.js",
-        icon: fabricIcon,
+        name: "Node.js",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
       },
       {
-        name: "Chrome Extensions",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chrome/chrome-original.svg",
+        name: "Express.js",
+        icon: "https://api.iconify.design/simple-icons:express.svg?color=white",
+      },
+      {
+        name: "FastAPI",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg",
+      },
+      {
+        name: "RESTful APIs",
+        icon: restIcon,
+      },
+      {
+        name: "JWT",
+        icon: "https://cdn.simpleicons.org/jsonwebtokens/white",
+      },
+      {
+        name: "OAuth2.0",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oauth/oauth-original.svg",
+      },
+    ],
+  },
+  {
+    name: "Cloud & Databases",
+    technologies: [
+      {
+        name: "AWS",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
+      },
+      {
+        name: "DynamoDB",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dynamodb/dynamodb-original.svg",
+      },
+      {
+        name: "Azure",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg",
+      },
+      {
+        name: "Supabase",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg",
+      },
+      {
+        name: "PostgreSQL",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+      },
+      {
+        name: "MySQL",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+      },
+      {
+        name: "Firebase",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
       },
     ],
   },
@@ -91,42 +166,20 @@ const TechStack = () => {
     ],
   },
   {
-    name: "Backend / APIs",
+    name: "DevOps & Build Tooling",
     technologies: [
       {
-        name: "Node.js",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+        name: "Docker",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
       },
       {
-        name: "Express.js",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+        name: "Kubernetes",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
       },
       {
-        name: "RESTful APIs",
-        icon: restIcon,
+        name: "GitHub Actions",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg",
       },
-    ],
-  },
-  {
-    name: "Developer Tools & AI",
-    technologies: [
-      {
-        name: "Claude Code",
-        icon: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/claude-code/default.svg",
-      },
-      {
-        name: "GitHub Copilot",
-        icon: "https://api.iconify.design/simple-icons:githubcopilot.svg?color=white",
-      },
-      {
-        name: "Cursor",
-        icon: "https://api.iconify.design/simple-icons:cursor.svg?color=white",
-      },
-    ],
-  },
-  {
-    name: "Build & Tooling",
-    technologies: [
       {
         name: "Vite",
         icon: "https://vitejs.dev/logo.svg",
@@ -135,42 +188,30 @@ const TechStack = () => {
         name: "Webpack",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg",
       },
-      {
-        name: "Babel",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/babel/babel-original.svg",
-      },
-      {
-        name: "ESLint",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original.svg",
-      },
-      {
-        name: "GitHub Actions",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg",
-      },
     ],
   },
   {
-    name: "Cloud & Databases",
+    name: "AI & Developer Tools",
     technologies: [
       {
-        name: "AWS",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
+        name: "OpenAI Agents SDK",
+        icon: "https://api.iconify.design/simple-icons:openai.svg?color=white",
       },
       {
-        name: "MySQL",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+        name: "MCP Servers",
+        icon: "https://api.iconify.design/simple-icons:modelcontextprotocol.svg?color=white",
       },
       {
-        name: "PostgreSQL",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+        name: "Claude Code",
+        icon: "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/claude-code/default.svg",
       },
       {
-        name: "DynamoDB",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dynamodb/dynamodb-original.svg",
+        name: "Cursor",
+        icon: "https://api.iconify.design/simple-icons:cursor.svg?color=white",
       },
       {
-        name: "Firebase",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+        name: "GitHub Copilot",
+        icon: "https://api.iconify.design/simple-icons:githubcopilot.svg?color=white",
       },
     ],
   },
@@ -183,11 +224,7 @@ const TechStack = () => {
       },
       {
         name: "GitHub",
-        icon: "https://img.icons8.com/?size=100&id=ARy6tFUfwclb&format=png&color=000000",
-      },
-      {
-        name: "Azure DevOps",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
+        icon: "https://img.icons8.com/?size=100&id=ARy6tFUfwclb&format=png&color=ffffff",
       },
     ],
   },

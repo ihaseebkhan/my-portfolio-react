@@ -9,7 +9,7 @@ const Hero = () => {
   const handleDownloadCV = () => {
     try {
       const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-      const fileUrl = "/assets/Muhammad_Haseeb_Frontend_Engineer_Resume.pdf";
+      const fileUrl = "/assets/Muhammad_Haseeb_Full_Stack_Engineer_Resume.pdf";
 
       if (isMobile) {
         // Create a real anchor element and simulate a tap
@@ -22,7 +22,7 @@ const Hero = () => {
       } else {
         const link = document.createElement("a");
         link.href = fileUrl;
-        link.setAttribute("download", "Muhammad_Haseeb_Frontend_Engineer_Resume.pdf");
+        link.setAttribute("download", "Muhammad_Haseeb_Full_Stack_Engineer_Resume.pdf");
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -83,7 +83,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto" ref={containerRef}>
           <div className="inline-block px-4 py-1 rounded-full neo-blur mb-6">
             <span className="text-lg font-medium text-accent">
-              Frontend Engineer
+              Full Stack Engineer
             </span>
           </div>
 
@@ -93,7 +93,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 text-balance">
-            Hi, I’m Muhammad Haseeb, a Frontend Engineer with 6+ years of experience building scalable, high-performance web applications. I specialize in React, TypeScript, and Next.js, creating user-focused applications across SaaS, EdTech, and IoT domains.
+            Hi, I’m Muhammad Haseeb, a Full Stack Engineer with 6+ years of experience building scalable, high-performance web applications. I specialize in React, Next.js, TypeScript, and Node.js, creating user-focused applications across SaaS, EdTech, and IoT domains.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
