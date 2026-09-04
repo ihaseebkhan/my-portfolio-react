@@ -16,7 +16,7 @@ const Experience = () => {
       title: "Frontend Developer",
       company: "Vitzo Limited",
       location: "Cheyenne, WY, USA",
-      period: "August 2023 - November 2025",
+      period: "August 2023 - Present",
       achievements: [
         "Built and enhanced scalable, user-facing web application features using React and TypeScript across multiple products, ensuring maintainable architecture and consistent UI patterns",
         "Developed a Chrome extension for capturing, editing, and sharing screenshots, leveraging Fabric.js for advanced canvas-based image manipulation",
