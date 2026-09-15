@@ -123,10 +123,6 @@ const TechStack = () => {
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dynamodb/dynamodb-original.svg",
       },
       {
-        name: "Azure",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg",
-      },
-      {
         name: "Supabase",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg",
       },
